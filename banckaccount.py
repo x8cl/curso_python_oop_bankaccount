@@ -23,13 +23,13 @@ class BankAccount:
             self.balance += self.balance * self.int_rate
         return self
 
-usuario1 = BankAccount(0.05, 1000)
-usuario2 = BankAccount()
+cuenta1 = BankAccount(0.05, 1000)
+cuenta2 = BankAccount()
 
-print("usuario1")
-usuario1.deposit(1000).deposit(2000).deposit(3000).withdraw(2000).yield_interest().display_account_info()
+print("cuenta1")
+cuenta1.deposit(1000).deposit(2000).deposit(3000).withdraw(2000).yield_interest().display_account_info()
 print(("-")*30)
-print("usuario2")
-usuario2.deposit(1000).deposit(1000).withdraw(1000).withdraw(1500).yield_interest().display_account_info()
+print("cuenta2")
+cuenta2.deposit(1000).deposit(1000).withdraw(1000).withdraw(1500).yield_interest().display_account_info()
 
 
